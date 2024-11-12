@@ -1,0 +1,163 @@
+:root{
+    /***** Start Color Types *****/
+    --primary-color-space-cadet: #2d2f73;
+    --primary-color-oxley: #81a584;
+    --primary-color-jarcarta: #383979;
+    --primary-color-white: #ffffff;
+    --primary-color-black: #000000;
+
+    --secondary-color-mandarin: #f47a4b;
+    --seconday-color-darkened-jarcarta: hsl(241, 35%, 25%);
+    /***** End Color Types *****/
+
+    /***** Start Font Families *****/
+
+    --header-font-family: "Philosopher" , sans-serif;
+    --paragraph-font-family: "Roboto", sans-serif;
+    --regular-weight: 400;
+    --bold-weight: 700;
+    --paragraph-font-size: 15px;
+    --header-font-size: 30px;
+
+    /***** End Font Families *****/
+}
+
+/***** Body Content Classes *****/
+
+body{
+  margin: 0%;
+  background-color: var(--primary-color-white);
+ }
+
+.nav-list-flex-container{
+  display: flex;
+  gap: 30px;
+}
+
+.donation-button-container{
+  margin: 10%;
+  text-align: center;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: center;
+}
+
+/********************************/
+  
+/***** Start Text Classes *****/
+
+/* Header Text Clasees */
+ .header-regular {
+  font-family: var(--header-font-family);
+  font-size: var(--header-font-size);
+ }
+
+ .header-regular-italic{
+  font-family: var(--header-font-family);
+  font-size: var(--header-font-size);
+  font-style: italic;
+ }
+
+ .header-bold{
+  font-family: var(--header-font-family);
+  font-size: var(--header-font-size);
+  font-weight: var(--bold-weight);
+ }
+
+ .header-bold-italic{
+  font-family: var(--header-font-family);
+  font-size: var(--header-font-size);
+  font-weight: var(--bold-weight);
+  font-style: italic;
+ }
+
+ .title-header {
+  font-size: 100;
+ }
+ /**********************/
+
+ /* Paragraph Text Classes */
+
+ .paragraph-regular {
+  font-family: var(--paragraph-font-family);
+  font-size: var(--paragraph-font-size);
+ }
+
+ .paragraph-regular-italic {
+  font-family: var(--paragraph-font-family);
+  font-size: var(--paragraph-font-size);
+  font-style: italic;
+ }
+
+ .paragraph-bold{
+  font-family: var(--paragraph-font-family);
+  font-size: var(--paragraph-font-size);
+  font-weight: var(--bold-weight);
+ }
+
+ .paragraph-bold-italic{
+  font-family: var(--paragraph-font-family);
+  font-size: var(--paragraph-font-size);
+  font-weight: var(--bold-weight);
+  font-style: italic;
+ }
+
+ /**************************/
+
+/***** End Text Classes *****/
+
+/***** Header Nav Bar Classes *****/
+
+  .primary-logo{
+    height: 175px;
+    width: auto;
+  }
+
+  .header-nav-bar{
+    display: flex;
+    flex-direction: row;
+    height: 175px;
+    border-bottom: #000000 solid;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-list-item{
+    list-style: none;
+  }
+
+/**********************************/
+
+/***** Button Classes *****/
+
+.donation-button{
+  height: 75px;
+  width: 300px;
+  font-size: var(--header-font-size);
+  font-family: var(--header-font-family);
+  font-style: italic;
+  font-weight: var(--bold-weight);
+
+  border-radius: 0.5em;
+  border-width: 0.04em;
+  background-color: var(--primary-color-jarcarta);
+  color: var(--primary-color-white);
+}
+
+#donation-button:active {
+  background-color: var(--seconday-color-darkened-jarcarta);
+}
+
+/**************************/
+
+/***** Desktop Design *****/
+
+@media only screen and (min-width: 600px) {
+  body{
+    background-color: var(--primary-color-oxley);
+  }
+}
+
+/**********************************/

@@ -1,0 +1,7 @@
+#AllowOverride All
+#DirectoryIndex index.php index.html index.htm
+
+AuthType Basic
+AuthName "Protected Page"
+AuthUserFile C:\Apache24\htdocs\Bridges-Health-Final\protected\.htpasswd
+Require valid-user

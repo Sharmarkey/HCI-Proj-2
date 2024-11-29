@@ -128,9 +128,10 @@ body{
     list-style: none;
   }
 
-/**********************************/
 
-/***** Button Classes *****/
+/*************************************************/
+
+/*************** Button Classes ******************/
 
 .donation-button{
   height: 75px;
@@ -150,14 +151,85 @@ body{
   background-color: var(--seconday-color-darkened-jarcarta);
 }
 
-/**************************/
+.submit-button{
+  height: 35px;
+  width: 200px;
+  font-size: 20px;
+  font-family: var(--header-font-family);
+  font-style: italic;
+  font-weight: var(--bold-weight);
+  
+  margin-top: 4%;
+
+  border-radius: 0.5em;
+  border-width: 0.04em;
+  background-color: var(--primary-color-jarcarta);
+  color: var(--primary-color-white);
+}
+
+#submit-button:hover {
+  background-color: var(--seconday-color-darkened-jarcarta);
+}
+
+#submit-button:active {
+  background-color: var(--seconday-color-darkened-jarcarta);
+}
+
+/*************************************************/
+
+/************* Account Pages Classes *************/
+.center-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.form-content{
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px gray;
+  height: 450px;
+  width: 350px;
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+}
+
+.form-item{
+  padding:15px;
+}
+
+.input-field{
+  padding: 5px;
+  width: 250px
+}
+
+.input-error-message{
+  color:red;
+  opacity: 75%;
+}
+
+.success-message{
+  color: var(--secondary-color-mandarin);
+  opacity: 75%;
+}
+/*************************************************/
+
+/**************** MISC ****************/
+.favicon-account-page{
+  height: 70px;
+  width: 70px;
+  padding-top: 10%;
+}
+/**************************************/
 
 /***** Desktop Design *****/
 
 @media only screen and (min-width: 600px) {
-  body{
-    background-color: var(--primary-color-oxley);
-  }
+
 }
 
 /**********************************/

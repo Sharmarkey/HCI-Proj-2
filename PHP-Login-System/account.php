@@ -3,7 +3,6 @@
     if(!isset($_SESSION['user'])){
         header("location: login.php"); exit();
     }
-
     if(isset($_GET['logout'])){
         unset($_SESSION['user']);
         header("location: login.php"); exit();
@@ -23,9 +22,11 @@
             <h2>Welcome <?php echo $_SESSION['user']; ?>!</h2>
             <a href="?logout">Logout</a>
         </header>
-
         <main>
-            <h3>demo<h3>
+        <form action="delete_account.php" method="POST" onsubmit="return confirm('Are you sure you want to delete your account?');">
+                <input type="hidden" name="username" value="<?php echo htmlspecialchars($_SESSION['user']); ?>">
+                <button type="submit" name="delete_account">Delete Account</button>
+            </form>
         </main>
     </div>
 </body>

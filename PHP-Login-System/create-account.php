@@ -36,10 +36,15 @@ if (isset($_POST['submit'])) {
                         <input class = "input-field paragraph-regular" type="text" placeholder="Username" name="username">
                     </div>
                     <div class ="form-item">
-                        <input class = "input-field paragraph-regular" type="text" placeholder="Password" name="password">
+                        <input type = "password" class = "input-field paragraph-regular" type="text" placeholder="Password" name="password">
                     </div>
                 </div>
-                <button class = "submit-button" type="submit" name="submit">Create Account</button>
+                <div>
+                    <button class = "submit-button" type="submit" name="submit">Create Account</button>
+                </div>
+                <div class = inner-site-link>
+                    <a href="/PHP-Login-System/login.php">Login</a>
+                </div>
 
                 <p class="input-error-message paragraph-regular-italic"><?php echo @$user->error ?></p>
                 <p class="success-message paragraph-regular-italic"><?php echo @$user->success ?></p>

@@ -33,10 +33,13 @@
                         <input class = "input-field paragraph-regular" type="text" placeholder="Username" name="username">
                     </div>
                     <div class ="form-item">
-                        <input class = "input-field paragraph-regular" type="text" placeholder="Password" name="password">
+                        <input class = "input-field paragraph-regular" type="password" placeholder="Password" name="password">
                     </div>
                 </div>
                 <button class = "submit-button" type="submit" name="submit">Login</button>
+                <div class = inner-site-link>
+                    <a href="/PHP-Login-System/create-account.php">Create an account</a>
+                </div>
 
                 <p class="input-error-message paragraph-regular-italic"><?php echo @$user->error ?></p>
                 <p class="success-message paragraph-regular-italic"><?php echo @$user->success ?></p>

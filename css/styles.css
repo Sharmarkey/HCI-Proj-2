@@ -55,6 +55,20 @@ body{
 .inner-site-link{
   margin-top:10px;
 }
+
+.protected-page-content{
+  display:flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: auto;
+  text-align: center;
+}
+
+.protected-page-content-container{
+  width: 900px;
+  display: flex;
+  align-items: center;
+}
 /********************************/
   
 /***** Start Text Classes *****/

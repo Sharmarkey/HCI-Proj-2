@@ -1,0 +1,7 @@
+body {background-color: whitesmoke;}
+h2 {text-align: center;}
+.primary-logo {
+    max-width: 200px; 
+    max-height: 100px; 
+    height: auto;
+}

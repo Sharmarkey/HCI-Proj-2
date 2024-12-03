@@ -57,15 +57,16 @@ body {
 .protected-page-content {
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  justify-content: center;
+  width:400px;
   margin: auto;
   text-align: center;
 }
 
 .protected-page-content-container {
-  width: 900px;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 /********************************/
@@ -229,7 +230,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-color-jarcarta);
   height: 34px;
   margin: auto;
   padding-top: 10.6px;
@@ -238,6 +238,10 @@ body {
 
 .nav-list-item {
   list-style: none;
+}
+
+.nav-bar{
+  background-color: var(--primary-color-jarcarta);
 }
 
 .nav-button {
@@ -257,6 +261,10 @@ body {
   background-color: rgba(129, 165, 132, 0.7);
 }
 
+.account-container{
+  display: flex;
+  flex-direction: row;
+}
 
 /*************************************************/
 
@@ -274,6 +282,7 @@ body {
   border-width: 0;
   background-color: var(--primary-color-oxley);
   color: var(--primary-color-white);
+  
 }
 
 #donation-button:active {
@@ -441,4 +450,22 @@ body {
   }
 }
 
-/**********************************/
+/****************************/
+
+/***** Account Page ONLY *****/
+
+@media only screen and (max-width: 550px) {
+  #account-info{
+    font-size: 20px;
+  }
+
+  #logout-button{
+    width:100px;
+  }
+  .header-flex-container{
+    justify-content: space-between;
+  }
+}
+
+
+/********************************/

@@ -414,6 +414,20 @@ body {
 
 /***** Desktop Design *****/
 
-@media only screen and (min-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  .footer-content{
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  #only-desktop{
+    display: none;
+  }
+  .header-flex-container{
+    justify-content: center;
+  }
+}
 
 /**********************************/

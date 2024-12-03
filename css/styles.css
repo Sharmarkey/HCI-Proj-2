@@ -410,6 +410,13 @@ body {
   padding-top: 10%;
 }
 
+.insta-widget-container{
+  display: block;
+  justify-content: center;
+  width: 770px;
+  margin: auto;
+  padding: 0px;
+}
 /**************************************/
 
 /***** Desktop Design *****/
@@ -421,12 +428,16 @@ body {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 770px) {
   #only-desktop{
     display: none;
   }
   .header-flex-container{
     justify-content: center;
+  }
+  .insta-widget-container{
+    display: flex;
+    width: auto;
   }
 }
 

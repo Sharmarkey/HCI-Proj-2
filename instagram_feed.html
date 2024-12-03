@@ -12,48 +12,138 @@
 </head>
 
 <body>
-    <header class="header-nav-bar">
-        <div>
-            <img class="primary-logo" src="/assets/icons/647cd109-96aa-4411-bf1a-c0c582e3066a.png">
-        </div>
-        <div>
-            <ul class="nav-list-flex-container">
+    <header class="header-flex-container">
+        <div class="appointment-social-media-header" id="only-desktop">
+            <h1 class="header-regular appointment-social-media-header-content">(507) 474-2221</h1>
+            <p class="header-regular-small appointment-social-media-header-content">Call for Appointment</p>
+            <ul class="social-media-list-flex-container appointment-social-media-header-content">
                 <li class="nav-list-item paragraph-regular">
-                    <a href="donation.html">
-                        <button> Donate </button>
+                    <a href="https://www.facebook.com/profile.php?id=61562904845913" class="social-media-list-icon">
+                        <img class="social-media-icon" src="/assets/icons/fb_primary.ico" />
                     </a>
                 </li>
                 <li class="nav-list-item paragraph-regular">
-                    <a href="protected/protected-page.html">
-                        <button> Login </button>
+                    <a href="https://www.youtube.com/channel/UCkqAJX7E3-nzu064ilpDDvw" class="social-media-list-icon">
+                        <img class="social-media-icon" src="/assets/icons/yt_primary.ico" />
                     </a>
                 </li>
                 <li class="nav-list-item paragraph-regular">
-                    <a href="instagram_feed.html">
-                        <button> Social Media </button>
+                    <a href="https://www.instagram.com/bridgescommunityhealth_/" class="social-media-list-icon">
+                        <img class="social-media-icon" src="/assets/icons/ig_primary.ico" />
+                    </a>
+                </li>
+                <li class="nav-list-item paragraph-regular">
+                    <a href="https://www.linkedin.com/company/bridges-health-winona?trk=public_profile_topcard-current-company"
+                        class="social-media-list-icon">
+                        <img class="social-media-icon" src="/assets/icons/in_primary.ico" />
                     </a>
                 </li>
             </ul>
         </div>
+        <a href="donation.html">
+            <img class="primary-logo" src="https://bridgeshealthwinona.org/wp-content/uploads/2024/08/logo-main.png">
+        </a>
+        <div class="header-button-container" id="only-desktop">
+            <a href="dontation-thank-you-page.html">
+                <button class="volunteer-button-header" id="volunteer-button">Volunteer</button>
+            </a>
+            <a href="dontation-thank-you-page.html">
+                <button class="donation-button-header" id="donation-button">Donate</button>
+            </a>
+        </div>
     </header>
+    <div class="nav-bar">
+        <ul class="nav-list-flex-container">
+            <li class="nav-list-item paragraph-regular">
+                <a class="darken-nav-button" href="donation.html">
+                    <button class="nav-button"> Donate </button>
+                </a>
+            </li>
+            <li class="nav-list-item paragraph-regular">
+                <a href="PHP-Login-System/login.php">
+                    <button class="nav-button"> Login </button>
+                </a>
+            </li>
+            <li class="nav-list-item paragraph-regular">
+                <a href="instagram_feed.html">
+                    <button class="nav-button"> Social Media </button>
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <!-- Instagram Feed Section -->
-    <main>
-        <section id="social-feed" class="social-feed-container">
-            <h2 class="header-regular">Our Latest Updates on Instagram</h2>
-            <!-- SnapWidget Embed Code with Script and Iframe -->
-            <script src="https://snapwidget.com/js/snapwidget.js"></script>
-            <div class="instagram-widget">
-                <iframe src="https://snapwidget.com/embed/1083640" class="snapwidget-widget" allowtransparency="true"
-                    frameborder="0" scrolling="no"
-                    style="border:none; overflow:hidden; border-radius:5px; width:100%; height:600px"
-                    title="Posts from Instagram"></iframe>
+    <div>
+        <div class="insta-widget-container">
+            <div class="embedsocial-hashtag" data-ref="b276c383a62f1c32c0de98bdebde41419de75b61">
+                <a class="feed-powered-by-es feed-powered-by-es-feed-img es-widget-branding"
+                    href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Instagram widget">
+                    <img src="https://embedsocial.com/cdn/icon/embedsocial-logo.webp" alt="EmbedSocial">
+                    <div class="es-widget-branding-text">Instagram widget</div>
+                </a>
             </div>
-        </section>
-    </main>
+            <script> (function (d, s, id) { var js; if (d.getElementById(id)) { return; } js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Bridges Health. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class = "quick-link-container">
+                <h1 class="header-regular appointment-social-media-header-content">Contact</h1>
+                <p class="header-regular-small appointment-social-media-header-content">(507) 474-2221</p>
+            </div>
+            <div class = "quick-link-container">
+                <img class="favicon-footer" src="https://bridgeshealthwinona.org/wp-content/uploads/2024/08/heart.png">
+                <ul class="social-media-list-flex-container appointment-social-media-header-content">
+                    <li class="nav-list-item paragraph-regular">
+                        <a href="https://www.facebook.com/profile.php?id=61562904845913" class="social-media-list-icon">
+                            <img class="social-media-icon" src="/assets/icons/fb_white.ico" />
+                        </a>
+                    </li>
+                    <li class="nav-list-item paragraph-regular">
+                        <a href="https://www.youtube.com/channel/UCkqAJX7E3-nzu064ilpDDvw"
+                            class="social-media-list-icon">
+                            <img class="social-media-icon" src="/assets/icons/yt_white.ico" />
+                        </a>
+                    </li>
+                    <li class="nav-list-item paragraph-regular">
+                        <a href="https://www.instagram.com/bridgescommunityhealth_/" class="social-media-list-icon">
+                            <img class="social-media-icon" src="/assets/icons/ig_white.ico" />
+                        </a>
+                    </li>
+                    <li class="nav-list-item paragraph-regular">
+                        <a href="https://www.linkedin.com/company/bridges-health-winona?trk=public_profile_topcard-current-company"
+                            class="social-media-list-icon">
+                            <img class="social-media-icon" src="/assets/icons/in_white.ico">
+                        </a>
+                    </li>
+                </ul>
+                <p class="paragraph-regular copy-write">© 2024 Bridges Health. A non-profit 501(c)(3).
+                    <br>
+                    "All Rights Reserved."
+                </p>
+            </div>
+            <div class = "quick-link-container">
+                <p class = "header-bold-small">Quick Links</p>
+                <ul class = "quick-link-list-container">
+                    <li class="quick-link-item">
+                        <a class="quick-link" href="donation.html">
+                            <p class="paragraph-regular ">Donate</p>
+                        </a>
+                    </li>
+                    <li class="quick-link-item">
+                        <a class="quick-link" href="instagram_feed.html">
+                            <p class="paragraph-regular">Social Media</p>
+                        </a>
+                    </li>
+                    <li class="quick-link-item">
+                        <a class="quick-link" href="PHP-Login-System/login.php">
+                            <p class="paragraph-regular">Login</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 

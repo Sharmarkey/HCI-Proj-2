@@ -1,170 +1,268 @@
-:root{
-    /***** Start Color Types *****/
-    --primary-color-space-cadet: #2d2f73;
-    --primary-color-oxley: #81a584;
-    --primary-color-jarcarta: #383979;
-    --primary-color-white: #ffffff;
-    --primary-color-black: #000000;
+:root {
+  /***** Start Color Types *****/
+  --primary-color-space-cadet: #2d2f73;
+  --primary-color-oxley: #81a584;
+  --primary-color-jarcarta: #383979;
+  --primary-color-white: #ffffff;
+  --primary-color-black: #000000;
 
-    --secondary-color-mandarin: #f47a4b;
-    --seconday-color-darkened-jarcarta: hsl(241, 35%, 25%);
-    /***** End Color Types *****/
+  --secondary-color-mandarin: #f47a4b;
+  --seconday-color-darkened-jarcarta: hsl(241, 35%, 25%);
+  --secondary-color-darkened-oxely: hsl(135, 21%, 37%);
+  /***** End Color Types *****/
 
-    /***** Start Font Families *****/
+  /***** Start Font Families *****/
 
-    --header-font-family: "Philosopher" , sans-serif;
-    --paragraph-font-family: "Roboto", sans-serif;
-    --regular-weight: 400;
-    --bold-weight: 700;
-    --paragraph-font-size: 15px;
-    --header-font-size: 30px;
+  --header-font-family: "Philosopher", sans-serif;
+  --paragraph-font-family: "Roboto", sans-serif;
+  --regular-weight: 400;
+  --bold-weight: 700;
+  --paragraph-font-size: 16px;
+  --header-font-size: 30px;
 
-    /***** End Font Families *****/
+  /***** End Font Families *****/
 }
 
 /***** Body Content Classes *****/
 
-body{
+body {
   margin: 0%;
   background-color: var(--primary-color-white);
- }
-
-.nav-list-flex-container{
-  display: flex;
-  gap: 30px;
 }
 
-.donation-button-container{
+.donation-button-container {
   margin: 10%;
   text-align: center;
 }
 
-.donation-page-container{
-  background-image: url("https://bridgeshealthwinona.org/wp-content/uploads/2024/11/Bridges-Health-Group.jpg");
+.donation-page-container {
+  background-image:
+    linear-gradient(45deg,
+      rgba(255, 255, 255, 0.7), rgba(56, 57, 121, 0.7), rgba(56, 57, 121, .8)),
+    url("https://bridgeshealthwinona.org/wp-content/uploads/2024/11/Bridges-Health-Group.jpg");
   display: block;
   height: 100%;
-  width: 95vw;
+  width: 100%;
+  overflow: hidden;
   margin: auto;
+
+  color: var(--primary-color-white);
+  text-align: center;
 }
 
-.footer-content{
+.inner-site-link {
+  margin-top: 10px;
+}
+
+.protected-page-content {
   display: flex;
-  justify-content: center;
-}
-
-.inner-site-link{
-  margin-top:10px;
-}
-
-.protected-page-content{
-  display:flex;
   flex-direction: column;
   width: 50vw;
   margin: auto;
   text-align: center;
 }
 
-.protected-page-content-container{
+.protected-page-content-container {
   width: 900px;
   display: flex;
   align-items: center;
 }
+
 /********************************/
-  
+
 /***** Start Text Classes *****/
 
 /* Header Text Clasees */
- .header-regular {
+.header-regular {
   font-family: var(--header-font-family);
   font-size: var(--header-font-size);
- }
+}
 
- .header-regular-small {
+.header-regular-small {
   font-family: var(--header-font-family);
   font-size: 20px;
- }
+}
 
- .header-regular-italic{
+.header-regular-italic {
   font-family: var(--header-font-family);
   font-size: var(--header-font-size);
   font-style: italic;
- }
+}
 
- .header-bold{
+.header-bold {
   font-family: var(--header-font-family);
   font-size: var(--header-font-size);
   font-weight: var(--bold-weight);
- }
+}
 
- .header-bold-italic{
+.header-bold-small {
+  font-family: var(--header-font-family);
+  font-size: 24px;
+  font-weight: var(--bold-weight);
+}
+
+.header-bold-italic {
   font-family: var(--header-font-family);
   font-size: var(--header-font-size);
   font-weight: var(--bold-weight);
   font-style: italic;
- }
+}
 
- .title-header {
+.title-header {
   font-size: 100;
- }
- /**********************/
+}
 
- /* Paragraph Text Classes */
+/**********************/
 
- .paragraph-regular {
+/* Paragraph Text Classes */
+
+.paragraph-regular {
   font-family: var(--paragraph-font-family);
   font-size: var(--paragraph-font-size);
- }
+}
 
- .paragraph-regular-italic {
+.paragraph-regular-italic {
   font-family: var(--paragraph-font-family);
   font-size: var(--paragraph-font-size);
   font-style: italic;
- }
+}
 
- .paragraph-bold{
+.paragraph-bold {
   font-family: var(--paragraph-font-family);
   font-size: var(--paragraph-font-size);
   font-weight: var(--bold-weight);
- }
+}
 
- .paragraph-bold-italic{
+.paragraph-bold-italic {
   font-family: var(--paragraph-font-family);
   font-size: var(--paragraph-font-size);
   font-weight: var(--bold-weight);
   font-style: italic;
- }
+}
 
- /**************************/
+/**************************/
 
 /***** End Text Classes *****/
 
-/***** Header Nav Bar Classes *****/
+/***** Header / Nav Bar Classes *****/
 
-  .primary-logo{
-    height: 175px;
-    width: auto;
-  }
+.header-flex-container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto; 
+  padding: 0 15px;
 
-  .header-nav-bar{
-    display: flex;
-    flex-direction: row;
-    height: 175px;
-    border-bottom: #000000 solid;
-    align-items: center;
-    width: 100vw;
-    padding-bottom: 0%;
-  }
+  color:var(--primary-color-jarcarta)
+}
 
-  .nav-list-item{
-    list-style: none;
-  }
+.appointment-social-media-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.appointment-social-media-header-content{
+  margin: 5px;
+}
+.header-button-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.donation-button-header{
+  height: 50px;
+  width: 200px;
+  font-size: 18px;
+  font-family: var(--header-font-family);
+  font-style: italic;
+  font-weight: var(--bold-weight);
+
+  margin: 10px;
+  border-radius: 0.5em;
+  border-width: 0px;
+  background-color: var(--primary-color-oxley);
+  color: var(--primary-color-white);
+}
+
+.volunteer-button-header{
+  height: 50px;
+  width: 200px;
+  font-size: 18px;
+  font-family: var(--header-font-family);
+  font-style: italic;
+  font-weight: var(--bold-weight);
+
+  margin: 10px;
+  border-radius: 0.5em;
+  border-width: 0px;
+  background-color: var(--primary-color-jarcarta);
+  color: var(--primary-color-white);
+}
+
+.social-media-icon{
+  width:auto;
+  height: 20px;
+}
+
+.social-media-list-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  padding:0px;
+}
+
+.social-media-list-icon{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.primary-logo {
+  height: 170px;
+  margin: 0%;
+  padding: 0%;
+  width: auto;
+}
+
+.nav-list-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color-jarcarta);
+  height: 34px;
+  margin: auto;
+  padding-top: 10.6px;
+  padding-bottom: 10.6px;
+}
+
+.nav-list-item {
+  list-style: none;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: arial, sans-serif;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: var(--header-font-family);
+
+  padding: 17.6px 15px;
+}
+
+.nav-button:hover {
+  background-color: rgba(129, 165, 132, 0.7);
+}
 
 
 /*************************************************/
 
 /*************** Button Classes ******************/
 
-.donation-button{
+.donation-button {
   height: 75px;
   width: 300px;
   font-size: var(--header-font-size);
@@ -173,23 +271,23 @@ body{
   font-weight: var(--bold-weight);
 
   border-radius: 0.5em;
-  border-width: 0.04em;
-  background-color: var(--primary-color-jarcarta);
+  border-width: 0;
+  background-color: var(--primary-color-oxley);
   color: var(--primary-color-white);
 }
 
 #donation-button:active {
-  background-color: var(--seconday-color-darkened-jarcarta);
+  background-color: var(--secondary-color-darkened-oxely);
 }
 
-.submit-button{
+.submit-button {
   height: 35px;
   width: 200px;
   font-size: 20px;
   font-family: var(--header-font-family);
   font-style: italic;
   font-weight: var(--bold-weight);
-  
+
   margin-top: 4%;
 
   border-radius: 0.5em;
@@ -198,25 +296,25 @@ body{
   color: var(--primary-color-white);
 }
 
-#submit-button:hover {
+#submit-button:active {
   background-color: var(--seconday-color-darkened-jarcarta);
 }
 
-#submit-button:active {
+.volunteer-button-header:active{
   background-color: var(--seconday-color-darkened-jarcarta);
 }
 
 /*************************************************/
 
 /************* Account Pages Classes *************/
-.center-form{
+.center-form {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90vh;
 }
 
-.form-content{
+.form-content {
   text-align: center;
   border-radius: 15px;
   box-shadow: 0px 0px 10px gray;
@@ -224,43 +322,98 @@ body{
   width: 350px;
 }
 
-.form-container{
+.form-container {
   display: flex;
   justify-content: center;
 }
 
-.form-item{
-  padding:15px;
+.form-item {
+  padding: 15px;
 }
 
-.input-field{
+.input-field {
   padding: 5px;
   width: 250px
 }
 
-.input-error-message{
-  color:red;
+.input-error-message {
+  color: red;
   opacity: 75%;
 }
 
-.success-message{
+.success-message {
   color: var(--secondary-color-mandarin);
   opacity: 75%;
 }
+
 /*************************************************/
 
+/**************** Footer Classes ****************/
+.footer{
+  color: var(--primary-color-white);
+  background-color: var(--primary-color-oxley);
+  padding: 20px 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin:0 auto; 
+  padding: 0 15px;
+}
+
+.quick-link-item{
+  list-style: none;
+  padding: 0%;
+}
+
+.quick-link{
+  text-decoration: none;
+  color: var(--primary-color-white);
+}
+
+.quick-link-content{
+  font-weight: normal;
+  text-decoration: none;
+  padding: 0%;
+}
+
+.quick-link-container{
+  display:block;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.quick-link-list-container{
+  align-items: center;
+  margin: 0px;
+  padding: 0;
+}
+
+.copy-write{
+  opacity: 60%;
+  font-size: 13px;
+}
+/************************************************/
+
 /**************** MISC ****************/
-.favicon-account-page{
+.favicon-account-page {
   height: 70px;
   width: 70px;
   padding-top: 10%;
 }
+
+.favicon-footer {
+  height: 100px;
+  width: 100px;
+  padding-top: 10%;
+}
+
 /**************************************/
 
 /***** Desktop Design *****/
 
-@media only screen and (min-width: 600px) {
-
-}
+@media only screen and (min-width: 600px) {}
 
 /**********************************/

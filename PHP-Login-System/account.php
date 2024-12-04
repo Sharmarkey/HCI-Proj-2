@@ -31,7 +31,7 @@ if (isset($_GET['logout'])) {
 </head>
 
 <body>
-<header class="header-flex-container">
+    <header class="header-flex-container" id="header-flex-container-account">
         <div class="appointment-social-media-header" id="only-desktop">
             <h1 class="header-regular appointment-social-media-header-content">(507) 474-2221</h1>
             <p class="header-regular-small appointment-social-media-header-content">Call for Appointment</p>
@@ -62,12 +62,10 @@ if (isset($_GET['logout'])) {
         <a href="/donation.html">
             <img class="primary-logo" src="https://bridgeshealthwinona.org/wp-content/uploads/2024/08/logo-main.png">
         </a>
-        <div class="header-button-container" id="only-desktop">
-            <a href="/dontation.html">
-                <button class="volunteer-button-header" id="volunteer-button">Volunteer</button>
-            </a>
-            <a href="https://stripe.com/">
-                <button class="donation-button-header" id="donation-button">Donate</button>
+        <div class="header-button-container" >
+            <h2 class="header-regular" id="account-info">Welcome <?php echo $_SESSION['user']; ?>!</h2>
+            <a href="?logout">
+                <button class="donation-button-header" id="logout-button">Logout</button>
             </a>
         </div>
     </header>
@@ -79,8 +77,8 @@ if (isset($_GET['logout'])) {
                 </a>
             </li>
             <li class="nav-list-item paragraph-regular">
-                <a href="/PHP-Login-System/login.php">
-                    <button class="nav-button"> Login </button>
+                <a href="?logout">
+                    <button class="nav-button"> Logout </button>
                 </a>
             </li>
             <li class="nav-list-item paragraph-regular">
@@ -165,12 +163,12 @@ if (isset($_GET['logout'])) {
                             <p class="paragraph-regular">Logout</p>
                         </a>
                     </li>
-                    <li class = "quick-link-item">
+                    <li class="quick-link-item">
                         <form action="delete_account.php" method="POST" onsubmit="return confirm('Are you sure you want to delete your account?');">
-                        <input type="hidden" name="username" value="<?php echo htmlspecialchars($_SESSION['user']); ?>">
-                        <button class = "paragraph-regular logout-button" type="submit" name="delete_account">
-                           Delete Account
-                        </button>
+                            <input type="hidden" name="username" value="<?php echo htmlspecialchars($_SESSION['user']); ?>">
+                            <button class="paragraph-regular logout-button" type="submit" name="delete_account">
+                                Delete Account
+                            </button>
                         </form>
                     </li>
                 </ul>

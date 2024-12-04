@@ -12,10 +12,6 @@ foreach ($dataArray as $key => $entry) {
         $found = true;
         break;
     }
-    else
-    {
-        $this->error = "Deletion not succesful.";
-    }
 }
 
 $newJsonData = json_encode(array_values($dataArray), JSON_PRETTY_PRINT);

@@ -446,6 +446,23 @@ body {
     justify-content: center;
     flex-direction: column;
   }
+
+  #account-info{
+    font-size: 20px;
+  }
+
+  #logout-button{
+    width:100px;
+  }
+
+  .header-button-container{
+    text-align: center;
+  }
+
+  .primary-logo{
+    width: 200px;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 770px) {
@@ -459,31 +476,9 @@ body {
     display: flex;
     width: auto;
   }
-}
-
-/****************************/
-
-/***** Account Page ONLY *****/
-
-@media only screen and (max-width: 550px) {
-  #account-info{
-    font-size: 20px;
-  }
-
-  #logout-button{
-    width:100px;
-  }
   #header-flex-container-account{
     justify-content: space-between;
-  }
-
-  .header-button-container{
-    text-align: center;
-  }
-
-  .primary-logo{
-    width: 200px;
-    height: auto;
+    margin: 0px 25px;
   }
 }
 

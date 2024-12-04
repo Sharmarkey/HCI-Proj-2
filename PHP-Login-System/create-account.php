@@ -59,10 +59,10 @@ if (isset($_POST['submit'])) {
             <img class="primary-logo" src="https://bridgeshealthwinona.org/wp-content/uploads/2024/08/logo-main.png">
         </a>
         <div class="header-button-container" id="only-desktop">
-            <a href="dontation-thank-you-page.html">
+            <a href="dontation.html">
                 <button class="volunteer-button-header" id="volunteer-button">Volunteer</button>
             </a>
-            <a href="dontation-thank-you-page.html">
+            <a href="https://stripe.com/">
                 <button class="donation-button-header" id="donation-button">Donate</button>
             </a>
         </div>
@@ -70,17 +70,17 @@ if (isset($_POST['submit'])) {
     <div class="nav-bar">
         <ul class="nav-list-flex-container">
             <li class="nav-list-item paragraph-regular">
-                <a class="darken-nav-button" href="donation.html">
+                <a class="darken-nav-button" href="/donation.html">
                     <button class="nav-button"> Donate </button>
                 </a>
             </li>
             <li class="nav-list-item paragraph-regular">
-                <a href="PHP-Login-System/login.php">
+                <a href="login.php">
                     <button class="nav-button"> Login </button>
                 </a>
             </li>
             <li class="nav-list-item paragraph-regular">
-                <a href="instagram_feed.html">
+                <a href="/instagram_feed.html">
                     <button class="nav-button"> Social Media </button>
                 </a>
             </li>
@@ -152,7 +152,7 @@ if (isset($_POST['submit'])) {
                 <p class = "header-bold-small">Quick Links</p>
                 <ul class = "quick-link-list-container">
                     <li class="quick-link-item">
-                        <a class="quick-link" href="donation.html">
+                        <a class="quick-link" href="/donation.html">
                             <p class="paragraph-regular ">Donate</p>
                         </a>
                     </li>

@@ -282,7 +282,6 @@ body {
   border-width: 0;
   background-color: var(--primary-color-oxley);
   color: var(--primary-color-white);
-  
 }
 
 #donation-button:active {
@@ -313,6 +312,16 @@ body {
   background-color: var(--seconday-color-darkened-jarcarta);
 }
 
+.logout-button{
+  background-color: var(--primary-color-oxley);
+  border: none;
+  color: var(--primary-color-white);
+}
+
+#logout-button:active{
+  background-color: var(--secondary-color-darkened-oxely);
+}
+
 /*************************************************/
 
 /************* Account Pages Classes *************/
@@ -334,6 +343,7 @@ body {
 .form-container {
   display: flex;
   justify-content: center;
+  padding: 30px 0;
 }
 
 .form-item {
@@ -462,8 +472,17 @@ body {
   #logout-button{
     width:100px;
   }
-  .header-flex-container{
+  #header-flex-container-account{
     justify-content: space-between;
+  }
+
+  .header-button-container{
+    text-align: center;
+  }
+
+  .primary-logo{
+    width: 200px;
+    height: auto;
   }
 }
 

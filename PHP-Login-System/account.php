@@ -31,7 +31,7 @@ if (isset($_GET['logout'])) {
 </head>
 
 <body>
-    <header class="header-flex-container" id="account-page-header">
+<header class="header-flex-container">
         <div class="appointment-social-media-header" id="only-desktop">
             <h1 class="header-regular appointment-social-media-header-content">(507) 474-2221</h1>
             <p class="header-regular-small appointment-social-media-header-content">Call for Appointment</p>
@@ -62,25 +62,29 @@ if (isset($_GET['logout'])) {
         <a href="/donation.html">
             <img class="primary-logo" src="https://bridgeshealthwinona.org/wp-content/uploads/2024/08/logo-main.png">
         </a>
-        <div class="header-button-container">
-            <h2 class="header-regular" id = "account-info">Welcome <?php echo $_SESSION['user']; ?>!</h2>
-            <button class="donation-button-header" id="logout-button" href="?logout">Logout</button>
+        <div class="header-button-container" id="only-desktop">
+            <a href="/dontation.html">
+                <button class="volunteer-button-header" id="volunteer-button">Volunteer</button>
+            </a>
+            <a href="https://stripe.com/">
+                <button class="donation-button-header" id="donation-button">Donate</button>
+            </a>
         </div>
     </header>
     <div class="nav-bar">
         <ul class="nav-list-flex-container">
             <li class="nav-list-item paragraph-regular">
-                <a class="darken-nav-button" href="donation.html">
+                <a class="darken-nav-button" href="/donation.html">
                     <button class="nav-button"> Donate </button>
                 </a>
             </li>
             <li class="nav-list-item paragraph-regular">
-                <a href="PHP-Login-System/login.php">
+                <a href="/PHP-Login-System/login.php">
                     <button class="nav-button"> Login </button>
                 </a>
             </li>
             <li class="nav-list-item paragraph-regular">
-                <a href="instagram_feed.html">
+                <a href="/instagram_feed.html">
                     <button class="nav-button"> Social Media </button>
                 </a>
             </li>
@@ -105,12 +109,6 @@ if (isset($_GET['logout'])) {
                 visual demonstrations of different tasks you will be expected to carry out during your time with us.
                 Please feel free to review these videos as needed.</p>
         </article>
-    </div>
-    <div>
-        <form action="delete_account.php" method="POST" onsubmit="return confirm('Are you sure you want to delete your account?');">
-            <input type="hidden" name="username" value="<?php echo htmlspecialchars($_SESSION['user']); ?>">
-            <button type="submit" name="delete_account">Delete Account</button>
-        </form>
     </div>
     <footer class="footer">
         <div class="footer-content">
@@ -153,19 +151,27 @@ if (isset($_GET['logout'])) {
                 <p class="header-bold-small">Quick Links</p>
                 <ul class="quick-link-list-container">
                     <li class="quick-link-item">
-                        <a class="quick-link" href="donation.html">
+                        <a class="quick-link" href="/donation.html">
                             <p class="paragraph-regular ">Donate</p>
                         </a>
                     </li>
                     <li class="quick-link-item">
-                        <a class="quick-link" href="instagram_feed.html">
+                        <a class="quick-link" href="/instagram_feed.html">
                             <p class="paragraph-regular">Social Media</p>
                         </a>
                     </li>
                     <li class="quick-link-item">
-                        <a class="quick-link" href="PHP-Login-System/login.php">
-                            <p class="paragraph-regular">Login</p>
+                        <a class="quick-link" href="?logout">
+                            <p class="paragraph-regular">Logout</p>
                         </a>
+                    </li>
+                    <li class = "quick-link-item">
+                        <form action="delete_account.php" method="POST" onsubmit="return confirm('Are you sure you want to delete your account?');">
+                        <input type="hidden" name="username" value="<?php echo htmlspecialchars($_SESSION['user']); ?>">
+                        <button class = "paragraph-regular logout-button" type="submit" name="delete_account">
+                           Delete Account
+                        </button>
+                        </form>
                     </li>
                 </ul>
             </div>
